@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  background-color: #f9fafc;
+}
+
+/* Desktop wrapper width : 1445px */
+.wrapper {
+  width: 1445px;
+  height: 1603px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebeb;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 59px;
+}
+
+.logo {
+  color: #1d1f24;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.369px;
+}
+
+.header-nav-item {
+  position: relative;
+  display: block;
+  opacity: 0.2;
+  color: #1d1f24;
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.header-nav-item:hover {
+  opacity: 1;
+}
+
+main {
+  width: 100%;
+  height: 1353px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.cards-container {
+  width: 100%;
+  height: 1193px;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "card-1 card-1 card-1 card-2"
+    "card-1 card-1 card-1 card-5"
+    "card-3 card-4 card-4 card-5"
+    "card-3 card-6 card-7 card-8";
+  gap: 32px;
+}
+
+.card-1 {
+  grid-area: card-1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/a5d89e070cf03a5187d8c8ba6605edaf.png),
+    100% 100% no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.card-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.category {
+  width: 107px;
+  height: 40px;
+  background-color: #ff565c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.card-1-title {
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 49px; /* 153.125% */
+  letter-spacing: -0.471px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+.card-1-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 230.769% */
+  position: absolute;
+  bottom: 20px;
+}
+
+.card-2 {
+  grid-area: card-2;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/e4fc138ccfaefbc5caafdbf7f1106c07.png),
+    100% 100% no-repeat;
+}
+
+.category-2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 107px;
+  height: 40px;
+  background-color: #ff565c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.card-2-title {
+  margin-left: 20px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.2px;
+}
+
+.card-2-footer {
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 230.769% */
+}
+
+.card-3 {
+  grid-area: card-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 27px;
+  background: #fff;
+}
+
+.card-3-title {
+  color: #1d1f24;
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.531px;
+  text-transform: uppercase;
+}
+
+.card-3-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  border-bottom: 1px solid #f2f3f6;
+}
+
+.card-3-number {
+  color: #1d1f24;
+  font-family: Oswald;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.1662;
+}
+
+.card-3-subtitle {
+  color: #1d1f24;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.2px;
+}
+
+.card-4 {
+  grid-area: card-4;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/10217641f2642f5b3484575f173f9f5e.png),
+    100% 100% no-repeat;
+}
+
+.category-4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 157px;
+  height: 40px;
+  background-color: #ff565c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.card-5 {
+  grid-area: card-5;
+}
+
+.card-6 {
+  grid-area: card-6;
+  background: 0px 0px / cover
+      url(./assets/images/589cf8179e1372bcd7ea2af2e9eb60c8.png),
+    lightgray 0px 0px / 100% 100% no-repeat;
+}
+
+.card-7 {
+  grid-area: card-7;
+  background: 0px 0px / cover
+      url(./assets/images/0329b2230db9e5573475e21cc214472f.png),
+    lightgray 0px 0px / 100% 100% no-repeat;
+}
+
+.card-8 {
+  grid-area: card-8;
+  background: 0px 0px / cover
+      url(./assets/images/d0ab4f0b6996204109eba833bca4b236.png),
+    lightgray 0px 0px / 100% 100% no-repeat;
+}
